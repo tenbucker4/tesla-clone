@@ -1,0 +1,28 @@
+aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 12;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    opacity: 0;
+    transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hide-menu {
+    width: fit-content;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.hide-menu svg {
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 2px;
+}
+
+.hide-menu svg:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
