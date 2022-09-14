@@ -1,11 +1,16 @@
 .home-page {
     position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 section {
     display: flex;
     justify-content: center;
     position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .section-header {
@@ -84,7 +89,25 @@ section {
 }
 
 .second-section {
+    height: 100vh;
+    background-image: url("../images/tesla-model-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .third-section {
+    height: 100vh;
+    background-image: url("../images/tesla-model-x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fourth-section {
+    height: 100vh;
+    background-image: url("../images/solar-panels.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

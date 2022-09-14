@@ -3,7 +3,9 @@ import "../styles/Header.css"
 
 const Header = () => {
   return (
-    <header>Tesla</header>
+    <header>
+        <img className='company-logo' src={require("../images/tesla-title.png")}></img>
+    </header>
   )
 }
 

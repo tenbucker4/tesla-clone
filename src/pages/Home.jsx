@@ -14,8 +14,7 @@ const Home = () => {
           <button className='custom-order-btn'>Custom Order</button>
           <button className='existing-inventory-btn'>Existing Inventory</button>
         </div>
-        <section className='first-section'>
-        </section>
+        <section className='first-section'></section>
         <section className='second-section'></section>
         <section className='third-section'></section>
         <section className='fourth-section'></section>

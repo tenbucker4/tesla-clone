@@ -9,3 +9,8 @@ header {
     align-items: center;
     padding: 0 2rem;
 }
+
+.company-logo {
+    width: 8rem;
+    height: auto;
+}
