@@ -12,10 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    overflow: hidden;
-}
-
 :root {
     --text-dark: #171a20;
     --button-background-primary: rgba(23, 26, 32, 0.9);
