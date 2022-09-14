@@ -10,6 +10,7 @@ aside {
     opacity: 0;
     transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
     overflow-y: scroll;
+    box-shadow: -2px 0px 50px 5px rgba(0, 0, 0, 0.2);
 }
 
 aside ul {
@@ -46,4 +47,10 @@ aside ul li:hover,
 .hide-menu svg {
     cursor: pointer;
     border-radius: 2px;
+}
+
+@media (min-width: 750px) {
+    .toggle-display {
+        display: none;
+    }
 }

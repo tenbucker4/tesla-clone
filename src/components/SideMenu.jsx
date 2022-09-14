@@ -14,6 +14,10 @@ const SideMenu = ({ sideMenuDisplay, setSideMenuDisplay }) => {
             color="#393c41"/>
         </div>
         <ul>
+            <li className='toggle-display'>Model S</li>
+            <li className='toggle-display'>Model 3</li>
+            <li className='toggle-display'>Model X</li>
+            <li className='toggle-display'>Powerwall</li>
             <li>Existing Inventory</li>
             <li>Used Inventory</li>
             <li>Trade-In</li>
