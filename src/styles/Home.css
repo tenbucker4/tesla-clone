@@ -18,11 +18,10 @@ section {
 
 .section-header {
     color: var(--text-dark);
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
     top: 15vh;
     z-index: 9;
     text-align: center;
@@ -65,9 +64,8 @@ section {
 }
 
 .home-buttons {
-    position: fixed;
+    position: absolute;
     top: 80vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -139,6 +137,7 @@ section {
 
 @media (max-width: 550px) {
     .home-buttons {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;

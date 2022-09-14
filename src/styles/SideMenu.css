@@ -3,7 +3,7 @@ aside {
     top: 0;
     right: 0;
     z-index: 12;
-    padding: 5rem 2rem;
+    padding: 5rem 3rem;
     height: 100%;
     width: 300px;
     background-color: white;
@@ -39,7 +39,7 @@ aside ul li:hover,
 
 .hide-menu {
     width: fit-content;
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
 }
