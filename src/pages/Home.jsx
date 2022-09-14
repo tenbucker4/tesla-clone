@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import SideMenu from '../components/SideMenu'
 import MenuCover from '../components/MenuCover'
 import "../styles/Home.css"
 
 const Home = ({ sideMenuDisplay, setSideMenuDisplay }) => {
+  const changeBackground = () => {
+
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground, true);
+    if (window.scrollY >= 100) {
+      console.log("scroll")
+    }
+  });
+
   return (
     <>
       <MenuCover sideMenuDisplay={sideMenuDisplay} setSideMenuDisplay={setSideMenuDisplay}/>
