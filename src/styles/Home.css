@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100vw;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: auto;
     scroll-snap-type: y mandatory;
     transition: filter 0.3s ease-in-out;
 }
@@ -19,6 +19,10 @@ section {
 .section-header {
     color: var(--text-dark);
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
     top: 15vh;
     z-index: 9;
     text-align: center;
@@ -62,7 +66,9 @@ section {
 .home-buttons {
     position: fixed;
     top: 80vh;
+    width: 100vw;
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
     z-index: 9;
 }
@@ -114,4 +120,36 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.fifth-section {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fifth-section img {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media (max-width: 550px) {
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .home-buttons button {
+        width: 90%;
+    }
+}
+
+@media (max-height: 700px) {
+    .home-buttons {
+        top: 75vh;
+    }
 }

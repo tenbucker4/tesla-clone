@@ -1,26 +1,13 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import SideMenu from '../components/SideMenu'
-import MenuCover from '../components/MenuCover'
 import "../styles/Home.css"
 
 const Home = ({ sideMenuDisplay, setSideMenuDisplay }) => {
-  const changeBackground = () => {
-
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', changeBackground, true);
-    if (window.scrollY >= 100) {
-      console.log("scroll")
-    }
-  });
-
   return (
     <>
-      <MenuCover sideMenuDisplay={sideMenuDisplay} setSideMenuDisplay={setSideMenuDisplay}/>
       <SideMenu sideMenuDisplay={sideMenuDisplay} setSideMenuDisplay={setSideMenuDisplay}/>
-      <div className='home-page' style={{ overflowY: sideMenuDisplay ? "hidden" : "scroll", filter: sideMenuDisplay ? "blur(4px)" : "none" }}>
+      <div className='home-page' style={{ pointerEvents: sideMenuDisplay ? "none" : "auto", filter: sideMenuDisplay ? "blur(4px)" : "none" }}>
           <Header sideMenuDisplay={sideMenuDisplay} setSideMenuDisplay={setSideMenuDisplay}/>
           <div className='section-header'>
             <h1>Model S</h1>
@@ -34,6 +21,9 @@ const Home = ({ sideMenuDisplay, setSideMenuDisplay }) => {
           <section className='second-section'></section>
           <section className='third-section'></section>
           <section className='fourth-section'></section>
+          <section className='fifth-section'>
+            <img src={require("../images/tesla-charger.webp")}></img>
+          </section>
       </div>
     </>
     
