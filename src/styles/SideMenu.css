@@ -1,13 +1,49 @@
+.menu-cover {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: calc(100% - 300px);
+    height: 100%;
+    z-index: 12;
+}
+
 aside {
     position: absolute;
     top: 0;
     right: 0;
     z-index: 12;
+    padding: 5rem 2rem;
     height: 100%;
     width: 300px;
     background-color: white;
     opacity: 0;
     transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    overflow-y: scroll;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+aside ul li {
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 0.5rem 0rem;
+    cursor: pointer;
+}
+
+aside ul li,
+.hide-menu svg {
+    transition: background-color 0.2s ease-in-out;
+}
+
+aside ul li:hover,
+.hide-menu svg:hover {
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .hide-menu {
@@ -19,10 +55,5 @@ aside {
 
 .hide-menu svg {
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
     border-radius: 2px;
-}
-
-.hide-menu svg:hover {
-    background-color: rgba(0, 0, 0, 0.1);
 }

@@ -14,14 +14,18 @@ const SideMenu = ({ sideMenuDisplay, setSideMenuDisplay }) => {
             color="#393c41"/>
         </div>
         <ul>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
+            <li>Existing Inventory</li>
+            <li>Used Inventory</li>
+            <li>Trade-In</li>
+            <li>Roadster</li>
+            <li>Semi</li>
+            <li>Commercial Energy</li>
+            <li>Utilities</li>
+            <li>Energy</li>
+            <li>Charging</li>
+            <li>Find Us</li>
+            <li>Support</li>
+            <li>Investor Relations</li>
         </ul>
     </aside>
   )
